@@ -45,5 +45,18 @@ public class Operators {
 		if(score > 100 && score-100 > 100) {
 			System.out.println("Both are true");
 		}
+		// Ternary Operator
+		boolean isAlien = score == 200 ? true : false;
+		System.out.println(isAlien);
+		// 4 ^ 2
+		System.out.println(4<<2);
+		// -4 ^ 2
+		System.out.println(-4<<2);
+		// 4 / 2
+		System.out.println(4>>2);
+		// -4 / 2
+		System.out.println(-4>>2);
+		// -4 / 2 weird
+		System.out.println(-4>>>2);
 	}
 }
