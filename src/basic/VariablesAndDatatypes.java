@@ -11,19 +11,22 @@ public static void main(String[] args) {
 	System.out.println("thirdNumber");
 	System.out.println(thirdNumber);
 	int total = firstNumber + secondNumber + thirdNumber;
-	System.out.println(total);
+	System.out.println("Total: " + total);
 	total = 0;
-	System.out.println(total);
-	int lastOne = 1000 - total;
-	System.out.println(lastOne);
+	System.out.println("Total: " + total);
+	final int lastOne = 1000 - total;
+	System.out.println("Total: " + lastOne);
+	//	lastOne = 200; Cannot reassign
 	
 	// width 32 4bytes
 	int minValue = -2147483648;
 	int maxValue = 2147483647;
 	System.out.println(minValue);
 	System.out.println(maxValue);
+	
 	// width 8 1byte
 	byte myByte = -128;
+	
 	// width 16 2bytes
 	short myshort = 32767;
 	
@@ -84,9 +87,34 @@ public static void main(String[] args) {
 	numberString += "55.09";
 	System.out.println(numberString);
 	
-	// treats int as string only
+	// treats int as string only when concatenated
 	String lastString = "10";
 	int data = 50;
 	System.out.println(lastString + data);
+	
+	float f1 = 35E3f;
+	double d1 = 12E5d;
+	
+	System.out.println(f1);
+	System.out.println(d1);
+	
+	char a = 65;
+	char b = 66;
+	char z = 65+25;
+	
+	System.out.println(a);
+	System.out.println(b);
+	System.out.println(z);
+	
+	// Typecasting
+	
+	int myInt = 99;
+	long integerValue = myInt;
+	
+	System.out.println("Typecasted Auto: " + integerValue);
+	
+	int anotherInt = (int) integerValue;
+	
+	System.out.println("Typecasted Manual: " + anotherInt);
 }
 }

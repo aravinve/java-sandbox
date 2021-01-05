@@ -15,6 +15,9 @@ public class IfElse {
 			System.out.println("Flag is false");
 		}
 		
+		// a > b , a < b , a != b , a == b , a!= b , a >= b , a<= b etc.
+		// These are some conditions which can be nested with && || !
+		
 		double d = 3400;
 		if(d < 10000) {
 			if(d < 5000 && d > 2000) {
@@ -31,7 +34,13 @@ public class IfElse {
 		} else if(d == 400) {
 			System.out.println("D is 400");
 		} else {
-			System.out.println("Danger DNger");
+			System.out.println("Danger Danger");
 		}
+		
+		// Ternary Operator
+		int a = 1000;
+		int b = 100;
+		String result = a < b ? "true" : "false";
+		System.out.println(result);
 	}
 }

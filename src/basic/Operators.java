@@ -27,7 +27,7 @@ public class Operators {
 		isBoolean = false;
 		if(isBoolean)
 			System.out.println("Helloooooo");
-		int score =200;
+		int score = 200;
 		if(score !=0) 
 			System.out.println(score);
 		if(score < 100) {
@@ -48,15 +48,12 @@ public class Operators {
 		// Ternary Operator
 		boolean isAlien = score == 200 ? true : false;
 		System.out.println(isAlien);
-		// 4 ^ 2
+		// Left Shift
 		System.out.println(4<<2);
-		// -4 ^ 2
 		System.out.println(-4<<2);
-		// 4 / 2
+		// Right Shift
 		System.out.println(4>>2);
-		// -4 / 2
 		System.out.println(-4>>2);
-		// -4 / 2 weird
 		System.out.println(-4>>>2);
 	}
 }
